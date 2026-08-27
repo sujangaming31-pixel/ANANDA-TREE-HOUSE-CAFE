@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ananda Tree House Cafe | Organic & Eco Dining</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    
+    /* Warm, attractive aesthetic background */
+    body { background-color: #f4ede2; color: #2c251e; line-height: 1.6; }
+
+    /* Top Banner Layout: Big Cafe Name on Left, Interior Photo on Right */
+    header {
+      background-color: #2d4436;
+      color: #faf7f2;
+      padding: 2rem 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .header-text { flex: 1; min-width: 280px; }
+    .header-text h1 { font-size: 2.5rem; color: #e8c382; margin-bottom: 0.5rem; }
+    .header-text p { font-size: 1.1rem; color: #d8e3db; margin-bottom: 0.8rem; }
+    
+    /* Highlight banner for foreign tourists */
+    .tourist-badge {
+      display: inline-block;
+      background: #8c533e;
+      color: #fff;
+      padding: 0.4rem 0.9rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .header-photo { width: 320px; max-width: 100%; border-radius: 12px; border: 3px solid #e8c382; }
+
+    /* Layout Containers */
+    .container { max-width: 1000px; margin: 2rem auto; padding: 0 1rem; }
+    .card { background: #ffffff; border-radius: 12px; padding: 1.8rem; margin-bottom: 2rem; box-shadow: 0 6px 15px rgba(0,0,0,0.06); }
+    h2 { color: #2d4436; margin-bottom: 1.2rem; font-size: 1.6rem; border-bottom: 2px solid #e8c382; padding-bottom: 0.4rem; }
+
+    /* Food Grid Layout */
+    .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+    .menu-card { background: #faf7f2; border: 1px solid #e5dacb; border-radius: 10px; overflow: hidden; display: flex; flex-direction: column; }
+    .menu-card img { width: 100%; height: 200px; object-fit: cover; }
+    .menu-info { padding: 1rem; flex: 1; display: flex; flex-direction: column; justify: space-between; }
+    .menu-info h3 { font-size: 1.15rem; color: #2d4436; margin-bottom: 0.3rem; }
+    .menu-info p { font-size: 0.9rem; color: #665c52; }
+    .price { font-size: 1.1rem; font-weight: bold; color: #8c533e; margin-top: 0.6rem; }
+
+    /* Call to Action Button */
+    .btn { display: inline-block; background: #2d4436; color: white; text-decoration: none; padding: 0.8rem 1.6rem; border-radius: 6px; font-weight: bold; margin-top: 1rem; }
+    .btn:hover { background: #8c533e; }
+  </style>
+</head>
+<body>
+
+  <!-- Header with Title on Left, Photo on Right -->
+  <header>
+    <div class="header-text">
+      <h1>Ananda Tree House Cafe</h1>
+      <p>Organic • Eco-Friendly • Vegan & Vegetarian Comfort Food in Boudha</p>
+      <span class="tourist-badge">🌍 Premium Hospitality & Friendly Service for Foreign Travelers</span>
+    </div>
+    <!-- Top Right Corner Photo -->
+    <img src="the-space-it-s-all-about.jpg" alt="Ananda Tree House Interior" class="header-photo" />
+  </header>
+
+  <div class="container">
+
+    <!-- About Section -->
+    <div class="card">
+      <h2>Welcome to Ananda Tree House</h2>
+      <p>Nestled right in Boudha, Ananda Tree House Cafe offers a tranquil, wooden sanctuary designed for travelers, digital nomads, and food lovers looking for fresh organic meals, specialty coffee, and warm Nepalese hospitality.</p>
+    </div>
+
+    <!-- Menu Section Featuring Uploaded Photos -->
+    <div class="card">
+      <h2>Our Fresh Organic Menu</h2>
+      <div class="menu-grid">
+
+        <!-- Item 1 -->
+        <div class="menu-card">
+          <img src="caption.jpg" alt="Buckwheat Pancake Set" />
+          <div class="menu-info">
+            <h3>Buckwheat Crepe & Fresh Fruit Plate</h3>
+            <p>Traditional organic buckwheat crepe served with sliced apples, bananas, fresh butter, local honey, and hot cocoa.</p>
+            <div class="price">NPR 450</div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="menu-card">
+          <img src="caption (1).jpg" alt="Asian Mushroom Noodle Bowl" />
+          <div class="menu-info">
+            <h3>Himalayan Herb & Cold Noodle Salad</h3>
+            <p>Fresh hand-pulled noodles topped with sautéed wild mushrooms, julienned carrots, cucumber, and fresh lemon.</p>
+            <div class="price">NPR 380</div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="menu-card">
+          <img src="ananda-tree-house-cafe.jpg" alt="Soup and Fries Combo" />
+          <div class="menu-info">
+            <h3>Golden Pumpkin Soup & Hand-cut Fries</h3>
+            <p>Warm hearty pumpkin cream soup accompanied by crispy potato fries and fresh beetroot detox juice.</p>
+            <div class="price">NPR 420</div>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="menu-card">
+          <img src="healty-and-fresh-food.jpg" alt="Organic Buddha Bowl" />
+          <div class="menu-info">
+            <h3>Organic Nourish Buddha Platter</h3>
+            <p>A balanced plate of seasoned greens, steamed rice, artisan toast, wild mushrooms, fresh salad, and chili dip.</p>
+            <div class="price">NPR 490</div>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="menu-card">
+          <img src="photo0jpg.jpg" alt="Buckwheat Pancakes and Soup Breakfast" />
+          <div class="menu-info">
+            <h3>Whole Grain Pancake & Herbal Soup Set</h3>
+            <p>Fluffy rustic buckwheat pancakes with banana, natural honey, fresh vegetable broth, and iced Himalayan tea.</p>
+            <div class="price">NPR 520</div>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="menu-card">
+          <img src="caption (2).jpg" alt="Nepali Organic Lunch Set" />
+          <div class="menu-info">
+            <h3>Fresh Garden Thali Set</h3>
+            <p>Steamed jasmine rice served with sautéed broccoli, cauliflower, local mustard greens, soup, and house pickles.</p>
+            <div class="price">NPR 400</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Contact & Location -->
+    <div class="card">
+      <h2>Visit Us in Boudha</h2>
+      <p>📍 <strong>Location:</strong> Phulbari-Ramhiti, Boudha Rd 6, Kathmandu (Near Boudhanath Stupa)</p>
+      <p>🕒 <strong>Opening Hours:</strong> 8:00 AM – 7:30 PM (Open Daily)</p>
+      <p>🌐 <strong>Languages Spoken:</strong> English, Nepali (Friendly assistance for all international visitors)</p>
+      <a href="tel:+9779808991305" class="btn">📞 Reserve a Table Now</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
